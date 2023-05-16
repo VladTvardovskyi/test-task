@@ -1,0 +1,7 @@
+FROM nginx:latest
+
+ENV YOUR_NAME = Vlad
+
+RUN sed -i "s|<h1>Welcome to nginx!</h1>|<h1>Bitmedia labs test task $YOUR_NAME</h1> /usr/share/nginx/html/index.html
+
+EXPOSE 80

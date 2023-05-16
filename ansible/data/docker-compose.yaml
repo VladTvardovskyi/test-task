@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: chocoman55/nginx-custom:latest
+    environment:
+      - YOUR_NAME=Vlad
+    ports:
+      - "8080:80"

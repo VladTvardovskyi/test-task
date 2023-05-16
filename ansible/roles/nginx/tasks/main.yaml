@@ -1,0 +1,9 @@
+- name: Copy docker-compose file
+  copy:
+    src: ../../../data/docker-compose.yaml
+    dest: ./new_folder/
+
+- name: Deploy server
+  shell: 
+    cmd: docker-compose up -d 
+    chdir: ./new_folder/
